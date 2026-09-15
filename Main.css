@@ -1,26 +1,81 @@
+.Header .right a:hover,
+.Project1Body .Text .MoreButton a:hover,
+.Project2Body .Text .MoreButton a:hover,
+.Project3Body .Text .MoreButton a:hover {
+    transform: translateY(0px) scale(1.04);
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, 0.10),
+        0 6px 12px rgba(0, 0, 0, 0.10);
+    z-index: 10;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Space Mono", monospace;
+    min-height: 100vh;
 }
+
+/*************************************************/
 
 .Header {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+
+    justify-content: space-between;
     align-items: center;
-    height: 50px;
-    background-color: #f5f5f5;
+    height: fit-content;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 0;
+
+    color: black;
+    border-radius: 5px;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.100);
 }
 
 .Header h1 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
+}
+
+.Header .Right {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header .right a {
+    padding: 10px;
+
+    background-image: url(Assets/BlackGrid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-weight: 400;
+
+    color: black;
+    border-radius: 5px;
+
+    border: 2px solid rgba(0, 0, 0, 0.100);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    z-index: 1;
 }
 
 .FillerLol {
@@ -30,6 +85,8 @@ body {
     height: 50px;
     background-color: #f5f5f5;
 }
+
+/**********************************************************/
 
 .Main {
     display: flex;
@@ -47,6 +104,10 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 8%;
+
+    color: black;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.100);
 }
 
 
@@ -79,9 +140,30 @@ body {
     margin-top: 0;
 }
 
+/*******************************************************/
+
+.CompletedProject {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    border-top: 2px solid rgba(0, 0, 0, 0.100);
+
+    height: max-content;
+
+
+}
+
+.CompletedProject h1 {
+    text-decoration: underline;
+}
+
+/*******************************************************/
+
 .Project1 {
     color: black;
-    border: 2px solid rgba(0, 0, 0, 0.100);
 }
 
 .Project1Heading {
@@ -96,18 +178,25 @@ body {
 
 .Project1Body {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: right;
+    align-items: right;
 
     height: auto;
     padding-bottom: 50px;
-    padding-left: 8%;
+
+    align-self: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .Project1Body img {
     aspect-ratio: 1/1;
     object-fit: cover;
     height: 500px;
+
+    margin-right: 8%;
 
     color: black;
     border: 4px solid rgba(0, 0, 0, 0.200);
@@ -116,27 +205,34 @@ body {
 .Project1Body .Text {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin-left: 2%;
+    align-items: right;
+
 }
 
 .Project1Body .Text h1 {
     font-weight: 700;
+    margin-left: 8%;
 }
 
 .Project1Body .Text h2 {
     font-weight: 400;
-    padding-right: 300px;
     margin-top: 0;
     margin-bottom: 10px;
 
     font-size: 20px;
+
+    margin-left: 8%;
+}
+
+.Project1Body .Text .MoreButton {
+    margin-left: 8%;
+    width: max-content;
 }
 
 .Project1Body .Text .MoreButton a {
     display: inline-block;
     padding: 10px 20px;
-    
+
     background-image: url(Assets/BlackGrid.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,9 +244,354 @@ body {
     font-weight: 700;
 
     color: black;
-    border-radius: 5px; 
+    border-radius: 5px;
 
     border: 2px solid rgba(0, 0, 0, 0.100);
+
+    display: flex;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    z-index: 1;
+}
+
+/***********************************************************************/
+
+.Project2 {
+    color: black;
+}
+
+.Project2Heading {
+    display: flex;
+
+    justify-content: left;
+    align-items: left;
+
+    height: auto;
+    padding-left: 8%;
+}
+
+.Project2Body {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+    height: auto;
+    padding-bottom: 50px;
+
+    align-self: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.Project2Body img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 500px;
+
+    margin-right: 18%;
+
+    color: black;
+    border: 4px solid rgba(0, 0, 0, 0.200);
+}
+
+.Project2Body .Text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-left: 8%;
+}
+
+.Project2Body .Text h1 {
+    font-weight: 700;
+
+    text-align: right;
+
+    margin-right: 8%;
+}
+
+.Project2Body .Text h2 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    margin-right: 8%;
+
+    text-align: right;
+}
+
+.Project2Body .Text .MoreButton {
+    margin-right: 8%;
+}
+
+.Project2Body .Text .MoreButton a {
+    display: inline-block;
+    padding: 10px 20px;
+
+    background-image: url(Assets/BlackGrid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    color: black;
+    border-radius: 5px;
+
+    border: 2px solid rgba(0, 0, 0, 0.100);
+
+    display: flex;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    z-index: 1;
+}
+
+.Project1Body .Text .MoreButton a:hover,
+.Project2Body .Text .MoreButton a:hover {
+    transform: translateY(0px) scale(1.04);
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, 0.10),
+        0 6px 12px rgba(0, 0, 0, 0.10);
+    z-index: 10;
+}
+
+/******************************************************************************/
+
+
+.Project3 {
+    color: black;
+}
+
+.Project3Heading {
+    display: flex;
+
+    justify-content: left;
+    align-items: left;
+
+    height: auto;
+    padding-left: 8%;
+}
+
+.Project3Body {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+    height: auto;
+    padding-bottom: 50px;
+
+    align-self: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.Project3Body img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 500px;
+
+    margin-right: 8%;
+
+    color: black;
+    border: 4px solid rgba(0, 0, 0, 0.200);
+}
+
+.Project3Body .Text {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+
+}
+
+.Project3Body .Text h1 {
+    font-weight: 700;
+    margin-left: 8%;
+}
+
+.Project3Body .Text h2 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+
+    margin-left: 8%;
+}
+
+.Project3Body .Text .MoreButton {
+    margin-left: 8%;
+    width: max-content;
+}
+
+.Project3Body .Text .MoreButton a {
+    display: inline-block;
+    padding: 10px 20px;
+
+    background-image: url(Assets/BlackGrid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    color: black;
+    border-radius: 5px;
+
+    border: 2px solid rgba(0, 0, 0, 0.100);
+
+    display: flex;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    z-index: 1;
+}
+
+
+/**************************************************************/
+
+.ModelProjectHeading {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    border-top: 2px solid rgba(0, 0, 0, 0.100);
+
+    height: max-content;
+
+}
+
+.ModelProjectHeading h1 {
+    text-decoration: underline;
+}
+
+/**************************************************************/
+
+.ModelProjectBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    color: black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.100);
+
+    height: fit-content;
+}
+
+.ModelProjectBody .LegV3 {
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.100);
+
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    padding: 10px;
+
+    align-self: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(Assets/BlackGrid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.ModelProjectBody .LegV3 .Model {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: center;
+}
+
+.ModelProjectBody .LegV3 .Model iframe {
+    height: 400px;
+    width: 400px;
+}
+
+.ModelProjectBody .LegV3 .ModelText h1 {
+    font-weight: 700;
+
+    text-align: left;
+    margin-right: 8%;
+
+    margin-bottom: 0px;
+}
+
+.ModelProjectBody .LegV3 .ModelText h2 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 20px;
+    margin-right: 8%;
+
+    text-align: left;
+}
+
+/**************************************************************/
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: left;
+    align-items: left;
+
+    height: max-content;
+    margin-top: auto;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+    background-image: url(Assets/BlackGrid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.100);
+}
+
+.Footer h1 {
+    font-weight: 700;
+    margin-left: 8%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Footer h2 {
+    font-weight: 700;
+    margin-left: 8%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: 20px;
+}
+
+.Footer h2 a {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
 }
 
 /*
