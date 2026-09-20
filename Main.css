@@ -16,6 +16,17 @@ body {
     min-height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#Research,
+#Introduction,
+#Theme {
+    scroll-margin-top: 79px;
+}
+
+
 /*************************************************/
 
 .Header {
@@ -90,30 +101,74 @@ body {
 
 .Main {
     display: flex;
+    flex-direction: row;
 
-    justify-content: left;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
 
     background-image: url(Assets/BlackGrid.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
 
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     padding-left: 8%;
+    padding-right: 8%;
 
     color: black;
 
     border-bottom: 2px solid rgba(0, 0, 0, 0.100);
 }
 
+.MainProject {
+    display: flex;
+    flex-direction: row;
 
-.Main img {
-    border-radius: 10px;
-    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+    background-image: url(Assets/Project1Heading.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: 0px;
+    background-attachment: fixed;
+
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    color: black;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.100);
+}
+
+.MainProject2 {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+    background-image: url(Assets/Project2Heading.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: 0px;
+    background-attachment: fixed;
+
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    color: black;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.100);
 }
 
 .Main .Text {
@@ -121,23 +176,54 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin-left: 2%;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.Main h1 {
+.MainProject .Text,
+.MainProject2 .Text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    margin-left: 8%;
+    margin-right: 8%;
+
+}
+
+.Main h1,
+.MainProject .Text h1,
+.MainProject2 .Text h1 {
     text-align: left;
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
     margin-bottom: 0;
+    width: fit-content;
+
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0px;
 }
 
-.Main h2 {
+.Main h2,
+.MainProject .Text h2,
+.MainProject2 .Text h2 {
     text-align: left;
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    margin-top: 0;
+
+    margin-bottom: 0px;
+
+    margin-top: 0px;
+
+    width: 100%;
+
+    background-color: white;
+    padding: 10px;
+    padding-top: 5px;
 }
 
 /*******************************************************/
@@ -160,10 +246,30 @@ body {
     text-decoration: underline;
 }
 
+.Text .CompletedProject .Bold {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 30px;
+}
+
+.Text .CompletedProject .Highlight {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 30px;
+
+    background-color: #fffddb;
+}
+
 /*******************************************************/
 
 .Project1 {
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .Project1Heading {
@@ -174,6 +280,7 @@ body {
 
     height: auto;
     padding-left: 8%;
+    padding-right: 8%;
 }
 
 .Project1Body {
@@ -202,19 +309,24 @@ body {
     border: 4px solid rgba(0, 0, 0, 0.200);
 }
 
+img #Compost {
+    height: 0px;
+}
+
 .Project1Body .Text {
     display: flex;
     flex-direction: column;
     align-items: right;
 
-}
-
-.Project1Body .Text h1 {
-    font-weight: 700;
     margin-left: 8%;
+    margin-right: 8%;
 }
 
-.Project1Body .Text h2 {
+.Text h1 {
+    font-weight: 700;
+}
+
+.Text h2 {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 10px;
@@ -223,6 +335,69 @@ body {
 
     margin-left: 8%;
 }
+
+.Text h3 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 20px;
+
+    margin-left: 10%;
+
+    text-decoration: none;
+    color: black;
+}
+
+.Text a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.Scroll a {
+    text-decoration: none;
+    color: #1b1b1b;
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+}
+
+.Text .Bold {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 20px;
+}
+
+.Text .Highlight {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 20px;
+
+    background-color: #fffddb;
+}
+
+.Text .HighlightBold {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 20px;
+
+    background-color: #fffddb;
+}
+
+.Text iframe {
+
+    height: 600px;
+    border: none;
+
+    color: black;
+    border: 4px solid rgba(0, 0, 0, 0.200);
+}
+
 
 .Project1Body .Text .MoreButton {
     margin-left: 8%;
