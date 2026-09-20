@@ -58,13 +58,6 @@ No dependencies or build step required.
    ```
 3. Navigate to `http://localhost:8000` (or the port shown).
 
-## ✅ Known Issues / To Do
-
-- `Project1.html` and `Project2.html` have some empty `<h1>`/`<h2>` placeholder tags left over from editing — safe to clean up.
-- `img #Compost { height: 0px; }` in `Main.css` currently hides the compost tumbler reference image on Project #002 — likely unintentional and worth revisiting.
-- Project #003 (Bamboo lunchbox) doesn't yet have its own page — currently just links out to Google Drive.
-- Minor copy typos throughout (e.g. "Portofolio," "trough," "athmosphere," "government") could use a proofread pass.
-- `about.html` has an empty leftover `.Project1Body` / `.Footer` block at the bottom of the file.
 
 ## 📬 Contact
 
