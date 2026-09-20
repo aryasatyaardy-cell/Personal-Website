@@ -389,9 +389,11 @@ img #Compost {
     background-color: #fffddb;
 }
 
-.Text iframe {
+.Booklet iframe {
 
     height: 600px;
+    width: 100%;
+
     border: none;
 
     color: black;
@@ -700,8 +702,9 @@ img #Compost {
 
 .ModelProjectBody .LegV3 .Model iframe {
     height: 400px;
-    width: 400px;
+    width: 450px;
 }
+
 
 .ModelProjectBody .LegV3 .ModelText h1 {
     font-weight: 700;
@@ -710,12 +713,15 @@ img #Compost {
     margin-right: 8%;
 
     margin-bottom: 0px;
+    width: 400px;
 }
 
 .ModelProjectBody .LegV3 .ModelText h2 {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0px;
+
+    width: 400px;
 
     font-size: 20px;
     margin-right: 8%;
