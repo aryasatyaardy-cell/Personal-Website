@@ -52,7 +52,7 @@ This is for a criss cross effect
 Also, it doesn't matter how many projects you put, keep ``` <div class="Project3"> ``` or ``` <div class="Project2"> ``` as it is, but never put it in another ``` <div class="Project3"> ``` or ``` <div class="Project2"> ```
 
 # ``` Index.html ``` Structure
-## Projects
+## Project
 ``` 
 <div class="Project3">
         <div class="Project3Heading">
@@ -77,4 +77,37 @@ Also, it doesn't matter how many projects you put, keep ``` <div class="Project3
 
         </div>
     </div>
-    ```
+    
+```
+
+## 3D Model
+```
+
+<div class="Project1" id="Research">
+            <div class="Project1Body">
+                <div class="img">
+                </div>
+                <div class="Text">
+                    <div class="ModelProjectBody">
+
+                        <div class="LegV3">
+                            <div class="Model">
+                                <iframe title="Leg V3" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                                    webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                                    xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+                                    web-share
+                                    src="https://sketchfab.com/models/8698e56a7ae94fe880816c1f937d7918/embed?autospin=1&autostart=1&transparent=1&ui_theme=dark">
+                                </iframe>
+                            </div>
+
+                            <div class="ModelText">
+                                <h1>Leg V3</h1>
+                                <h2>This is the latest model of Shadow Hunter's leg</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+```
