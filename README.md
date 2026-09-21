@@ -50,3 +50,31 @@ I will be using ``` <div class="Project3> ``` as example
 This is for a criss cross effect
 
 Also, it doesn't matter how many projects you put, keep ``` <div class="Project3"> ``` or ``` <div class="Project2"> ``` as it is, but never put it in another ``` <div class="Project3"> ``` or ``` <div class="Project2"> ```
+
+# ``` Index.html ``` Structure
+## Projects
+``` 
+<div class="Project3">
+        <div class="Project3Heading">
+            <h1>Project count/date</h1>
+        </div>
+
+        <div class="Project3Body">
+
+            <div class="img">
+                <img src="Assets/YourImage.png" alt="YourImageTitle">
+            </div>
+
+            <div class="Text">
+                <h1>Title of Your Project</h1>
+                <h2>Brief explanation of your text</h2>   ## You can always use one ``` <h2></h2> ```, but to add a new pharagraph, use new ``` <h2></h2> ``` 
+                
+                <div class="MoreButton">
+                    <a href="ThisProjectsFullExplanation.html">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    ```
