@@ -18,7 +18,9 @@ Mainly, the purpose of this web is to showcase my past projects so I can showcas
 
 ## Customising
 ``` <h1></h1> ``` Is used for titles
+
 ``` <h2></h2> ``` Is used for main texts, jus plain ol' boring texts
+
 ``` <h3></h3> ``` Same like ``` <h2></h2> ``` but for lists, it have a gap of margin between the ``` <h3> ``` and the right side
 
 ## in ``` index.html ```
